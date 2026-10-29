@@ -1,0 +1,38 @@
+{
+    "LightGBM": {
+        "Accuracy (%)": 87.29,
+        "ROC-AUC": 0.9469,
+        "Precision (%)": 85.39,
+        "Recall (%)": 79.28,
+        "F1-Score": 0.8222,
+        "Train Time (s)": 0.89,
+        "Latency (ms/sample)": 0.002
+    },
+    "XGBoost": {
+        "Accuracy (%)": 87.07,
+        "ROC-AUC": 0.944,
+        "Precision (%)": 84.81,
+        "Recall (%)": 79.32,
+        "F1-Score": 0.8197,
+        "Train Time (s)": 1.47,
+        "Latency (ms/sample)": 0.001
+    },
+    "CatBoost": {
+        "Accuracy (%)": 86.39,
+        "ROC-AUC": 0.9395,
+        "Precision (%)": 84.5,
+        "Recall (%)": 77.51,
+        "F1-Score": 0.8085,
+        "Train Time (s)": 3.84,
+        "Latency (ms/sample)": 0.0006
+    },
+    "Random Forest": {
+        "Accuracy (%)": 86.24,
+        "ROC-AUC": 0.9413,
+        "Precision (%)": 85.87,
+        "Recall (%)": 75.26,
+        "F1-Score": 0.8022,
+        "Train Time (s)": 3.35,
+        "Latency (ms/sample)": 0.003
+    }
+}

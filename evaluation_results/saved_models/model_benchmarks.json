@@ -1,0 +1,50 @@
+{
+    "LightGBM": {
+        "R2 (Log Scale)": 0.5109,
+        "R2 (Orig Scale)": 0.3775,
+        "MAE (days)": 4.298,
+        "RMSE (days)": 6.609,
+        "MedAE (days)": 2.77,
+        "Acc +-2.5d (%)": 46.09,
+        "Acc +-3.5d (%)": 59.58,
+        "Acc +-5.0d (%)": 72.96,
+        "Train Time (s)": 1.03,
+        "Latency (ms/sample)": 0.0033
+    },
+    "XGBoost": {
+        "R2 (Log Scale)": 0.5101,
+        "R2 (Orig Scale)": 0.3781,
+        "MAE (days)": 4.296,
+        "RMSE (days)": 6.606,
+        "MedAE (days)": 2.769,
+        "Acc +-2.5d (%)": 45.96,
+        "Acc +-3.5d (%)": 59.49,
+        "Acc +-5.0d (%)": 73.01,
+        "Train Time (s)": 2.08,
+        "Latency (ms/sample)": 0.0015
+    },
+    "CatBoost": {
+        "R2 (Log Scale)": 0.4887,
+        "R2 (Orig Scale)": 0.3518,
+        "MAE (days)": 4.4,
+        "RMSE (days)": 6.744,
+        "MedAE (days)": 2.857,
+        "Acc +-2.5d (%)": 44.87,
+        "Acc +-3.5d (%)": 58.16,
+        "Acc +-5.0d (%)": 72.09,
+        "Train Time (s)": 2.43,
+        "Latency (ms/sample)": 0.0035
+    },
+    "Random Forest": {
+        "R2 (Log Scale)": 0.4888,
+        "R2 (Orig Scale)": 0.3578,
+        "MAE (days)": 4.393,
+        "RMSE (days)": 6.713,
+        "MedAE (days)": 2.85,
+        "Acc +-2.5d (%)": 45.27,
+        "Acc +-3.5d (%)": 58.13,
+        "Acc +-5.0d (%)": 71.88,
+        "Train Time (s)": 13.76,
+        "Latency (ms/sample)": 0.0037
+    }
+}

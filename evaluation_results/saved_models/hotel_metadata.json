@@ -1,0 +1,113 @@
+{
+    "champion_model": "Tuned LightGBM Classifier",
+    "champion_metrics": {
+        "Accuracy (%)": 87.57,
+        "ROC-AUC": 0.9489,
+        "Precision (%)": 85.61,
+        "Recall (%)": 79.92,
+        "F1-Score": 0.8267,
+        "Train Time (s)": 3.01,
+        "Latency (ms/sample)": 0.0092
+    },
+    "lgb_tuned_metrics": {
+        "Accuracy (%)": 87.57,
+        "ROC-AUC": 0.9489,
+        "Precision (%)": 85.61,
+        "Recall (%)": 79.92,
+        "F1-Score": 0.8267,
+        "Train Time (s)": 3.01,
+        "Latency (ms/sample)": 0.0092
+    },
+    "xgb_tuned_metrics": {
+        "Accuracy (%)": 87.59,
+        "ROC-AUC": 0.9484,
+        "Precision (%)": 85.68,
+        "Recall (%)": 79.88,
+        "F1-Score": 0.8268,
+        "Train Time (s)": 4.66,
+        "Latency (ms/sample)": 0.002
+    },
+    "lgb_best_params": {
+        "subsample": 0.8,
+        "num_leaves": 127,
+        "n_estimators": 400,
+        "min_child_samples": 20,
+        "learning_rate": 0.03
+    },
+    "xgb_best_params": {
+        "subsample": 0.9,
+        "n_estimators": 400,
+        "max_depth": 8,
+        "learning_rate": 0.06,
+        "colsample_bytree": 0.85
+    },
+    "numerical_features": [
+        "lead_time",
+        "total_stay_nights",
+        "stays_in_weekend_nights",
+        "stays_in_week_nights",
+        "adults",
+        "children",
+        "total_guests",
+        "is_family",
+        "previous_cancellations",
+        "booking_changes",
+        "days_in_waiting_list",
+        "adr",
+        "required_car_parking_spaces",
+        "total_of_special_requests",
+        "room_type_mismatch",
+        "net_cancellations",
+        "has_parking",
+        "has_special_requests"
+    ],
+    "categorical_features": [
+        "hotel",
+        "arrival_date_month",
+        "meal",
+        "country",
+        "market_segment",
+        "distribution_channel",
+        "deposit_type",
+        "customer_type"
+    ],
+    "sample_count": 119208,
+    "benchmark_table": {
+        "LightGBM": {
+            "Accuracy (%)": 87.29,
+            "ROC-AUC": 0.9469,
+            "Precision (%)": 85.39,
+            "Recall (%)": 79.28,
+            "F1-Score": 0.8222,
+            "Train Time (s)": 0.89,
+            "Latency (ms/sample)": 0.002
+        },
+        "XGBoost": {
+            "Accuracy (%)": 87.07,
+            "ROC-AUC": 0.944,
+            "Precision (%)": 84.81,
+            "Recall (%)": 79.32,
+            "F1-Score": 0.8197,
+            "Train Time (s)": 1.47,
+            "Latency (ms/sample)": 0.001
+        },
+        "CatBoost": {
+            "Accuracy (%)": 86.39,
+            "ROC-AUC": 0.9395,
+            "Precision (%)": 84.5,
+            "Recall (%)": 77.51,
+            "F1-Score": 0.8085,
+            "Train Time (s)": 3.84,
+            "Latency (ms/sample)": 0.0006
+        },
+        "Random Forest": {
+            "Accuracy (%)": 86.24,
+            "ROC-AUC": 0.9413,
+            "Precision (%)": 85.87,
+            "Recall (%)": 75.26,
+            "F1-Score": 0.8022,
+            "Train Time (s)": 3.35,
+            "Latency (ms/sample)": 0.003
+        }
+    }
+}

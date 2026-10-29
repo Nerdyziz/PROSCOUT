@@ -1,0 +1,113 @@
+{
+    "champion_model": "Tuned LightGBM Regressor",
+    "champion_metrics": {
+        "R2 (Log Scale)": 0.9989,
+        "R2 (Orig Scale)": 0.9687,
+        "MAE (\u20ac)": 109514.72,
+        "MedAE (\u20ac)": 13925.63,
+        "RMSE (\u20ac)": 1342556.31,
+        "Acc within \u00b120% (%)": 99.69,
+        "Train Time (s)": 0.5,
+        "Latency (ms/sample)": 0.0061
+    },
+    "lgb_tuned_metrics": {
+        "R2 (Log Scale)": 0.9989,
+        "R2 (Orig Scale)": 0.9687,
+        "MAE (\u20ac)": 109514.72,
+        "MedAE (\u20ac)": 13925.63,
+        "RMSE (\u20ac)": 1342556.31,
+        "Acc within \u00b120% (%)": 99.69,
+        "Train Time (s)": 0.5,
+        "Latency (ms/sample)": 0.0061
+    },
+    "xgb_tuned_metrics": {
+        "R2 (Log Scale)": 0.9989,
+        "R2 (Orig Scale)": 0.9689,
+        "MAE (\u20ac)": 110589.6,
+        "MedAE (\u20ac)": 15237.37,
+        "RMSE (\u20ac)": 1338179.69,
+        "Acc within \u00b120% (%)": 99.55,
+        "Train Time (s)": 0.46,
+        "Latency (ms/sample)": 0.0018
+    },
+    "lgb_best_params": {
+        "subsample": 0.9,
+        "num_leaves": 63,
+        "n_estimators": 350,
+        "min_child_samples": 20,
+        "learning_rate": 0.08
+    },
+    "xgb_best_params": {
+        "subsample": 0.9,
+        "n_estimators": 450,
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.85
+    },
+    "numerical_features": [
+        "age",
+        "overall",
+        "potential",
+        "potential_growth",
+        "international_reputation",
+        "weak_foot",
+        "skill_moves",
+        "pace",
+        "shooting",
+        "passing",
+        "dribbling",
+        "defending",
+        "physic",
+        "technical_rating",
+        "physical_rating",
+        "is_in_prime_age",
+        "overall_squared"
+    ],
+    "categorical_features": [
+        "position_group",
+        "preferred_foot"
+    ],
+    "sample_count": 19165,
+    "benchmark_table": {
+        "LightGBM": {
+            "R2 (Log Scale)": 0.9989,
+            "R2 (Orig Scale)": 0.9681,
+            "MAE (\u20ac)": 111772.0,
+            "MedAE (\u20ac)": 14623.57,
+            "RMSE (\u20ac)": 1354798.42,
+            "Acc within \u00b120% (%)": 99.69,
+            "Train Time (s)": 0.44,
+            "Latency (ms/sample)": 0.004
+        },
+        "XGBoost": {
+            "R2 (Log Scale)": 0.9988,
+            "R2 (Orig Scale)": 0.9723,
+            "MAE (\u20ac)": 106147.59,
+            "MedAE (\u20ac)": 14796.81,
+            "RMSE (\u20ac)": 1262639.14,
+            "Acc within \u00b120% (%)": 99.51,
+            "Train Time (s)": 0.57,
+            "Latency (ms/sample)": 0.0015
+        },
+        "CatBoost": {
+            "R2 (Log Scale)": 0.9986,
+            "R2 (Orig Scale)": 0.9831,
+            "MAE (\u20ac)": 91149.74,
+            "MedAE (\u20ac)": 17255.63,
+            "RMSE (\u20ac)": 987499.95,
+            "Acc within \u00b120% (%)": 99.65,
+            "Train Time (s)": 1.08,
+            "Latency (ms/sample)": 0.002
+        },
+        "Random Forest": {
+            "R2 (Log Scale)": 0.998,
+            "R2 (Orig Scale)": 0.9526,
+            "MAE (\u20ac)": 149553.11,
+            "MedAE (\u20ac)": 12105.57,
+            "RMSE (\u20ac)": 1651821.87,
+            "Acc within \u00b120% (%)": 99.1,
+            "Train Time (s)": 1.32,
+            "Latency (ms/sample)": 0.0138
+        }
+    }
+}
